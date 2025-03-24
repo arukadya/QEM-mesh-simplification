@@ -1,0 +1,19 @@
+Sample Vertex 280557420
+
+詳細メッシュ→QEM辺縮約
+min : 0.000000 max 0.002190 mean : 0.000094 RMS : 0.000127 
+QEM辺縮約→詳細メッシュ
+min : 0.000000 max 0.001694 mean : 0.000101 RMS : 0.000137 
+
+詳細メッシュ→QEM頂点クラスタリング
+min : 0.000000 max 0.004953 mean : 0.000283 RMS : 0.000458 
+QEM頂点クラスタリング→詳細メッシュ
+min : 0.000000 max 25.864691 mean : 0.382791 RMS : 0.829063
+
+サンプルメッシュの情報
+頂点数13824,面数27644
+
+オリジナルメッシュの情報
+lucy.obj
+ダウンロード元 The Stanford Scanning Repository http://graphics.stanford.edu/data/3Dscanrep/
+頂点数14027872,面数28055742

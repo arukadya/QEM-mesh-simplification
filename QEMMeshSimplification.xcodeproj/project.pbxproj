@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E86FF4D92CAD04C600677974 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86FF4D82CAD04C600677974 /* main.cpp */; };
+		E876C7882CE33B7100A0FF69 /* testmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E876C7802CE33B7000A0FF69 /* testmain.cpp */; };
+		E876C78A2CE33B7100A0FF69 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E876C7852CE33B7100A0FF69 /* Mesh.cpp */; };
+		E876C78B2CE33B7100A0FF69 /* grid_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E876C7862CE33B7100A0FF69 /* grid_main.cpp */; };
+		E876C78C2CE33B7100A0FF69 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E876C7872CE33B7100A0FF69 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E80F600A2CE33AB8002DE510 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
+		E80F600B2CE33AC7002DE510 /* output */ = {isa = PBXFileReference; lastKnownFileType = folder; path = output; sourceTree = "<group>"; };
 		E86FF4D52CAD04C600677974 /* QEMMeshSimplification */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = QEMMeshSimplification; sourceTree = BUILT_PRODUCTS_DIR; };
-		E86FF4D82CAD04C600677974 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E876C7802CE33B7000A0FF69 /* testmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testmain.cpp; sourceTree = "<group>"; };
+		E876C7822CE33B7000A0FF69 /* Mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
+		E876C7832CE33B7000A0FF69 /* UnionFind.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UnionFind.hpp; sourceTree = "<group>"; };
+		E876C7852CE33B7100A0FF69 /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		E876C7862CE33B7100A0FF69 /* grid_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = grid_main.cpp; sourceTree = "<group>"; };
+		E876C7872CE33B7100A0FF69 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,14 @@
 		E86FF4D72CAD04C600677974 /* QEMMeshSimplification */ = {
 			isa = PBXGroup;
 			children = (
-				E86FF4D82CAD04C600677974 /* main.cpp */,
+				E876C7862CE33B7100A0FF69 /* grid_main.cpp */,
+				E876C7872CE33B7100A0FF69 /* main.cpp */,
+				E876C7852CE33B7100A0FF69 /* Mesh.cpp */,
+				E876C7822CE33B7000A0FF69 /* Mesh.hpp */,
+				E876C7802CE33B7000A0FF69 /* testmain.cpp */,
+				E876C7832CE33B7000A0FF69 /* UnionFind.hpp */,
+				E80F600B2CE33AC7002DE510 /* output */,
+				E80F600A2CE33AB8002DE510 /* resources */,
 			);
 			path = QEMMeshSimplification;
 			sourceTree = "<group>";
@@ -119,7 +136,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E86FF4D92CAD04C600677974 /* main.cpp in Sources */,
+				E876C78B2CE33B7100A0FF69 /* grid_main.cpp in Sources */,
+				E876C78A2CE33B7100A0FF69 /* Mesh.cpp in Sources */,
+				E876C78C2CE33B7100A0FF69 /* main.cpp in Sources */,
+				E876C7882CE33B7100A0FF69 /* testmain.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +153,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -178,6 +198,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../lib/eigen3.4.0\"";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -194,7 +215,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -233,6 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../lib/eigen3.4.0\"";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -246,7 +268,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHN7NN92K6;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -256,7 +278,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHN7NN92K6;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
