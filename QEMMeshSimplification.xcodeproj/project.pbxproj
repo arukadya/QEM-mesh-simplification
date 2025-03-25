@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E876C7882CE33B7100A0FF69 /* testmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E876C7802CE33B7000A0FF69 /* testmain.cpp */; };
 		E876C78A2CE33B7100A0FF69 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E876C7852CE33B7100A0FF69 /* Mesh.cpp */; };
-		E876C78B2CE33B7100A0FF69 /* grid_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E876C7862CE33B7100A0FF69 /* grid_main.cpp */; };
 		E876C78C2CE33B7100A0FF69 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E876C7872CE33B7100A0FF69 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,11 +27,9 @@
 		E80F600A2CE33AB8002DE510 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
 		E80F600B2CE33AC7002DE510 /* output */ = {isa = PBXFileReference; lastKnownFileType = folder; path = output; sourceTree = "<group>"; };
 		E86FF4D52CAD04C600677974 /* QEMMeshSimplification */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = QEMMeshSimplification; sourceTree = BUILT_PRODUCTS_DIR; };
-		E876C7802CE33B7000A0FF69 /* testmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testmain.cpp; sourceTree = "<group>"; };
 		E876C7822CE33B7000A0FF69 /* Mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
 		E876C7832CE33B7000A0FF69 /* UnionFind.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UnionFind.hpp; sourceTree = "<group>"; };
 		E876C7852CE33B7100A0FF69 /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
-		E876C7862CE33B7100A0FF69 /* grid_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = grid_main.cpp; sourceTree = "<group>"; };
 		E876C7872CE33B7100A0FF69 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,11 +63,9 @@
 		E86FF4D72CAD04C600677974 /* QEMMeshSimplification */ = {
 			isa = PBXGroup;
 			children = (
-				E876C7862CE33B7100A0FF69 /* grid_main.cpp */,
 				E876C7872CE33B7100A0FF69 /* main.cpp */,
 				E876C7852CE33B7100A0FF69 /* Mesh.cpp */,
 				E876C7822CE33B7000A0FF69 /* Mesh.hpp */,
-				E876C7802CE33B7000A0FF69 /* testmain.cpp */,
 				E876C7832CE33B7000A0FF69 /* UnionFind.hpp */,
 				E80F600B2CE33AC7002DE510 /* output */,
 				E80F600A2CE33AB8002DE510 /* resources */,
@@ -136,10 +130,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E876C78B2CE33B7100A0FF69 /* grid_main.cpp in Sources */,
 				E876C78A2CE33B7100A0FF69 /* Mesh.cpp in Sources */,
 				E876C78C2CE33B7100A0FF69 /* main.cpp in Sources */,
-				E876C7882CE33B7100A0FF69 /* testmain.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
